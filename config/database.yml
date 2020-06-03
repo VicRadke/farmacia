@@ -6,13 +6,13 @@
 #
 default: &default
   adapter: mysql2
-  username: Victor
-  password: enchilada123
-  database: farmacia
+  username: HEf5bP02Ci
+  password: gBGTou7F3n
+  database: HEf5bP02Ci
   port: 3306
   pool: <%= ENV.fetch("RAILS_MAX_THREADS") { 5 } %>
   timeout: 5000
-
+  host: remotemysql.com
 development:
   <<: *default
 
