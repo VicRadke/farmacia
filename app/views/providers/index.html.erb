@@ -1,13 +1,13 @@
 <p id="notice"><%= notice %></p>
 
-<h1>Providers</h1>
+<h1>Provedores</h1>
 
 <table>
   <thead>
     <tr>
-      <th>Name</th>
-      <th>Cellphone</th>
-      <th>Address</th>
+      <th>Nombre</th>
+      <th>Telefono</th>
+      <th>Direccion</th>
       <th colspan="3"></th>
     </tr>
   </thead>
@@ -18,9 +18,9 @@
         <td><%= provider.name %></td>
         <td><%= provider.cellphone %></td>
         <td><%= provider.address %></td>
-        <td><%= link_to 'Show', provider %></td>
-        <td><%= link_to 'Edit', edit_provider_path(provider) %></td>
-        <td><%= link_to 'Destroy', provider, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+        <td><%= link_to 'Mostrar', provider %></td>
+        <td><%= link_to 'Editar', edit_provider_path(provider) %></td>
+        <td><%= link_to 'Eliminar', provider, method: :delete, data: { confirm: 'Estas seguro?' } %></td>
       </tr>
     <% end %>
   </tbody>
@@ -28,4 +28,6 @@
 
 <br>
 
-<%= link_to 'New Provider', new_provider_path %>
+<%= link_to 'Nuevo Provedor', new_provider_path %>
+<br><br>
+<%= link_to 'Inicio', '/' %>

@@ -1,4 +1,8 @@
 Rails.application.routes.draw do
+  root to: 'explorer#index'
+  devise_for :users
+   
+  
   resources :medicines
   resources :providers
   resources :employees

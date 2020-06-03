@@ -1,23 +1,28 @@
 <p id="notice"><%= notice %></p>
 
 <p>
-  <strong>Name:</strong>
+  <strong>Nombre:</strong>
   <%= @medicine.name %>
 </p>
 
 <p>
-  <strong>Price:</strong>
+  <strong>Precio:</strong>
   <%= @medicine.price %>
 </p>
 
 <p>
-  <strong>Quantity:</strong>
+  <strong>Cantidad disponible:</strong>
   <%= @medicine.quantity %>
 </p>
 
 <p>
-  <strong>Patent:</strong>
-  <%= @medicine.patent %>
+<strong>
+  <% if @medicine.patent %>
+    Este medicamento es de patente
+  <% else %>
+    Este medicamento no tiene patente
+  <% end %>
+</strong>
 </p>
 
 <%= link_to 'Edit', edit_medicine_path(@medicine) %> |
