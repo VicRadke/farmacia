@@ -1,29 +1,29 @@
 <p id="notice"><%= notice %></p>
 
 <p>
-  <strong>Name:</strong>
+  <strong>Nombre:</strong>
   <%= @employee.name %>
 </p>
 
 <p>
-  <strong>Last name:</strong>
+  <strong>Apellido:</strong>
   <%= @employee.last_name %>
 </p>
 
 <p>
-  <strong>Birthday:</strong>
+  <strong>Fecha nacimiento:</strong>
   <%= @employee.birthday %>
 </p>
 
 <p>
-  <strong>Cellphone:</strong>
+  <strong>Telefono:</strong>
   <%= @employee.cellphone %>
 </p>
 
 <p>
-  <strong>Sex:</strong>
+  <strong>Sexo:</strong>
   <%= @employee.sex %>
 </p>
 
-<%= link_to 'Edit', edit_employee_path(@employee) %> |
-<%= link_to 'Back', employees_path %>
+<%= link_to 'Editar', edit_employee_path(@employee) %> |
+<%= link_to 'Regresar', employees_path %>

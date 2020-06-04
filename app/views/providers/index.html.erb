@@ -1,17 +1,26 @@
 <p id="notice"><%= notice %></p>
-
+</div>
+  <div class="col-sm">
 <h1>Provedores</h1>
+</div>
 
+</div>
+  <div class="col-sm">
 <table>
   <thead>
     <tr>
-      <th>Nombre</th>
-      <th>Telefono</th>
-      <th>Direccion</th>
+    <nav aria-label="breadcrumb">
+    <ol class="breadcrumb">
+    <ul>
+      <th>Nombre&nbsp;&nbsp;</th>
+      <th>Telefono&nbsp;&nbsp;</th>
+      <th>Direccion&nbsp;&nbsp;</th>
       <th colspan="3"></th>
+      </ol>
+      </nav>
     </tr>
   </thead>
-
+  </div>  
   <tbody>
     <% @providers.each do |provider| %>
       <tr>
